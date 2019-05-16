@@ -1,0 +1,499 @@
+@media only screen and (max-width: 1280px) {
+  body main #fullpage div div div .port_1_3 {
+    width: 65%; }
+  body main #fullpage div div div .port_2_3 {
+    width: 65%; }
+  body main #fullpage div div div .port_3_3 {
+    width: 65%; }
+  body main #fullpage div div div .go_to {
+    right: 8%; } }
+
+@media only screen and (max-width: 1272px) {
+  body main #fullpage div div .everitoken {
+    height: 100px; } }
+
+@media only screen and (max-width: 1231px) {
+  body main #fullpage div div .joy {
+    height: 125px; } }
+
+@media only screen and (max-width: 1219px) {
+  body main #fullpage div div .risex {
+    height: 85px; }
+  body main #fullpage div div form {
+    width: 90%; }
+  body main #fullpage div div div .port_1_3 {
+    width: 60%; }
+  body main #fullpage div div div .port_2_3 {
+    width: 60%; }
+  body main #fullpage div div div .port_3_3 {
+    width: 60%; }
+  body main #fullpage div div div .go_to {
+    right: 10%; } }
+
+@media only screen and (max-width: 1068px) {
+  body main #fullpage div div div .go_to {
+    right: 8%; }
+  body main #fullpage div div .promotion_smi {
+    padding: 8% 5%; } }
+
+@media only screen and (max-width: 1024px) {
+  body main #fullpage div div .services_1_caption {
+    font-size: 18px; }
+  body main #fullpage div div .services_2_caption {
+    font-size: 18px; }
+  body main #fullpage div div .services_3_caption {
+    font-size: 18px; }
+  body main #fullpage div div div h2 {
+    font-size: 14px; }
+  body main #fullpage div div div p {
+    font-size: 10px; }
+  body main #fullpage div div div .port_1_3 {
+    width: 55%; }
+  body main #fullpage div div div .port_2_3 {
+    width: 55%; }
+  body main #fullpage div div div .port_3_3 {
+    width: 55%; }
+  body main #fullpage div div div .go_to {
+    right: 10%; } }
+
+@media only screen and (max-width: 968px) {
+  body main #fullpage div div div .port_1_3 {
+    width: 50%; }
+  body main #fullpage div div div .port_2_3 {
+    width: 50%; }
+  body main #fullpage div div div .port_3_3 {
+    width: 50%; } }
+
+@media only screen and (max-width: 871px) {
+  body main #fullpage div div .risex {
+    height: 100px; } }
+
+@media only screen and (max-width: 841px) {
+  body main #fullpage div div .joy {
+    height: 140px; }
+  body main #fullpage div div .promotion_social {
+    padding: 8% 5%; } }
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #1B1A1E; }
+    body main {
+      background: none; }
+      body main .mob_scrollup {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+      body main .mobile_menu {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+      body main #menuToggle {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+      body main .menu {
+        display: none; }
+      body main .menu_services {
+        display: none; }
+      body main .menu_portfolio {
+        display: none; }
+      body main .contact_us {
+        display: none; }
+      body main .dot {
+        display: none; }
+      body main .telegram {
+        display: none; }
+      body main .agancy {
+        display: none; }
+      body main .bord_top_right {
+        display: none; }
+      body main .bord_top_left {
+        display: none; }
+      body main .bord_right {
+        display: none; }
+      body main .bord_bottom_right {
+        display: none; }
+      body main .bord_bottom_left {
+        display: none; }
+      body main .bord_left_bottom {
+        display: none; }
+      body main .bord_left_top {
+        display: none; }
+      body main #fullpage .home_section .home_img .home_img_dec {
+        display: none; }
+      body main #fullpage .home_section .home_img .home_img_mob {
+        display: inline; }
+      body main #fullpage .concept_section {
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content; }
+        body main #fullpage .concept_section .concept_caption {
+          position: relative;
+          padding: 0;
+          margin: 5% 0;
+          top: auto;
+          right: auto;
+          -webkit-align-self: center;
+              -ms-flex-item-align: center;
+                  align-self: center;
+          font-size: 24px; }
+        body main #fullpage .concept_section .about {
+          width: 80%;
+          margin: 1% 0;
+          padding: 4%; }
+      body main #fullpage .services_1_section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content; }
+        body main #fullpage .services_1_section .services_caption {
+          position: relative;
+          padding: 0;
+          margin: 5% 0;
+          top: auto;
+          right: auto;
+          -webkit-align-self: center;
+              -ms-flex-item-align: center;
+                  align-self: center;
+          font-size: 24px; }
+        body main #fullpage .services_1_section .services_1_caption_mob {
+          display: block;
+          width: 90%;
+          margin: 1% 0;
+          -webkit-box-ordinal-group: 2;
+          -webkit-order: 1;
+              -ms-flex-order: 1;
+                  order: 1; }
+        body main #fullpage .services_1_section .services_1_content {
+          width: 90%;
+          margin: 1% 0;
+          -webkit-box-ordinal-group: 4;
+          -webkit-order: 3;
+              -ms-flex-order: 3;
+                  order: 3; }
+          body main #fullpage .services_1_section .services_1_content .services_1_caption {
+            display: none; }
+        body main #fullpage .services_1_section .services_1_img {
+          width: 90%;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin: 5% 0;
+          -webkit-box-ordinal-group: 3;
+          -webkit-order: 2;
+              -ms-flex-order: 2;
+                  order: 2; }
+      body main #fullpage .services_2_section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content; }
+        body main #fullpage .services_2_section .services_caption {
+          display: none; }
+        body main #fullpage .services_2_section .services_2_caption_mob {
+          display: block;
+          width: 90%;
+          margin: 4% 0;
+          -webkit-box-ordinal-group: 2;
+          -webkit-order: 1;
+              -ms-flex-order: 1;
+                  order: 1; }
+        body main #fullpage .services_2_section .services_2_content {
+          width: 90%;
+          margin: 1% 0;
+          -webkit-box-ordinal-group: 4;
+          -webkit-order: 3;
+              -ms-flex-order: 3;
+                  order: 3; }
+          body main #fullpage .services_2_section .services_2_content .services_2_caption {
+            display: none; }
+        body main #fullpage .services_2_section .services_2_img {
+          width: 90%;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin: 5% 0;
+          -webkit-box-ordinal-group: 3;
+          -webkit-order: 2;
+              -ms-flex-order: 2;
+                  order: 2; }
+      body main #fullpage .services_3_section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content; }
+        body main #fullpage .services_3_section .services_caption {
+          display: none; }
+        body main #fullpage .services_3_section .services_3_caption_mob {
+          display: block;
+          width: 90%;
+          margin: 4% 0;
+          -webkit-box-ordinal-group: 2;
+          -webkit-order: 1;
+              -ms-flex-order: 1;
+                  order: 1; }
+        body main #fullpage .services_3_section .services_3_content {
+          width: 90%;
+          margin: 1% 0;
+          -webkit-box-ordinal-group: 4;
+          -webkit-order: 3;
+              -ms-flex-order: 3;
+                  order: 3; }
+          body main #fullpage .services_3_section .services_3_content .services_3_caption {
+            display: none; }
+        body main #fullpage .services_3_section .services_3_img {
+          width: 90%;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin: 5% 0;
+          -webkit-box-ordinal-group: 3;
+          -webkit-order: 2;
+              -ms-flex-order: 2;
+                  order: 2; }
+      body main #fullpage .portfolio_1_section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content; }
+        body main #fullpage .portfolio_1_section .portfolio_caption {
+          position: relative;
+          padding: 0;
+          margin: 10% 0;
+          top: auto;
+          right: auto;
+          -webkit-align-self: center;
+              -ms-flex-item-align: center;
+                  align-self: center;
+          font-size: 24px; }
+        body main #fullpage .portfolio_1_section .portfolio_1_caption {
+          position: relative;
+          font-size: 18px;
+          top: 0;
+          margin: 0; }
+        body main #fullpage .portfolio_1_section .portfolio_1_img {
+          width: 90%;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin: 5% 0; }
+        body main #fullpage .portfolio_1_section .portfolio_1_content {
+          width: 70%;
+          margin: 1% 0;
+          -webkit-box-ordinal-group: 4;
+          -webkit-order: 3;
+              -ms-flex-order: 3;
+                  order: 3; }
+          body main #fullpage .portfolio_1_section .portfolio_1_content .everitoken {
+            height: 40px; }
+            body main #fullpage .portfolio_1_section .portfolio_1_content .everitoken p {
+              left: -5%; }
+            body main #fullpage .portfolio_1_section .portfolio_1_content .everitoken .port_1_3 {
+              width: 67%; }
+      body main #fullpage .portfolio_2_section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        margin-top: 10%; }
+        body main #fullpage .portfolio_2_section .portfolio_caption {
+          display: none; }
+        body main #fullpage .portfolio_2_section .portfolio_2_caption {
+          position: relative;
+          font-size: 18px;
+          top: 0;
+          margin: 0; }
+        body main #fullpage .portfolio_2_section .portfolio_2_img {
+          width: 90%;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin: 5% 0; }
+        body main #fullpage .portfolio_2_section .portfolio_2_content {
+          width: 70%;
+          margin: 1% 0;
+          -webkit-box-ordinal-group: 4;
+          -webkit-order: 3;
+              -ms-flex-order: 3;
+                  order: 3; }
+          body main #fullpage .portfolio_2_section .portfolio_2_content .joy {
+            height: 50px; }
+            body main #fullpage .portfolio_2_section .portfolio_2_content .joy p {
+              left: -5%; }
+            body main #fullpage .portfolio_2_section .portfolio_2_content .joy .port_2_3 {
+              width: 67%; }
+      body main #fullpage .portfolio_3_section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        margin-top: 10%; }
+        body main #fullpage .portfolio_3_section .portfolio_caption {
+          display: none; }
+        body main #fullpage .portfolio_3_section .portfolio_3_caption {
+          position: relative;
+          font-size: 18px;
+          top: 0;
+          margin: 0; }
+        body main #fullpage .portfolio_3_section .portfolio_3_img {
+          width: 90%;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin: 5% 0; }
+        body main #fullpage .portfolio_3_section .portfolio_3_content {
+          width: 70%;
+          margin: 1% 0;
+          -webkit-box-ordinal-group: 4;
+          -webkit-order: 3;
+              -ms-flex-order: 3;
+                  order: 3; }
+          body main #fullpage .portfolio_3_section .portfolio_3_content .risex {
+            height: 30px; }
+            body main #fullpage .portfolio_3_section .portfolio_3_content .risex p {
+              left: -5%; }
+            body main #fullpage .portfolio_3_section .portfolio_3_content .risex .port_3_3 {
+              width: 67%; }
+      body main #fullpage .contacts_section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        margin-top: 10%; }
+        body main #fullpage .contacts_section .services_caption {
+          position: relative;
+          padding: 0;
+          margin: 5% 0;
+          top: auto;
+          right: auto;
+          -webkit-align-self: center;
+              -ms-flex-item-align: center;
+                  align-self: center;
+          font-size: 24px; }
+        body main #fullpage .contacts_section .contacts_content {
+          width: 80%;
+          height: -webkit-max-content;
+          height: -moz-max-content;
+          height: max-content;
+          margin: 1% 0;
+          margin-bottom: 5%;
+          -webkit-box-ordinal-group: 4;
+          -webkit-order: 3;
+              -ms-flex-order: 3;
+                  order: 3; }
+          body main #fullpage .contacts_section .contacts_content form {
+            width: 100%; }
+        body main #fullpage .contacts_section .contacts_img {
+          width: 90%;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin: 5% 0; } }
+
+@media only screen and (max-width: 735px) {
+  body main #fullpage div div .risex {
+    height: 40px !important; } }
+
+@media only screen and (max-width: 712px) {
+  body main #fullpage div .home_img {
+    width: 75%; }
+  body main #fullpage div div .joy {
+    height: 70px !important; } }
+
+@media only screen and (max-width: 622px) {
+  body main #fullpage div .home_img {
+    width: 80%; }
+  body main #fullpage div div .everitoken {
+    height: 60px !important; }
+  body main #fullpage div div div .go_to {
+    right: 8%; } }
+
+@media only screen and (max-width: 545px) {
+  body main #fullpage .contacts_section .contacts_content {
+    width: 90%; }
+  body main #fullpage .portfolio_1_section .portfolio_1_content {
+    width: 80%; }
+  body main #fullpage .portfolio_2_section .portfolio_2_content {
+    width: 80%; }
+  body main #fullpage .portfolio_3_section .portfolio_3_content {
+    width: 80%; }
+  body main #fullpage div .home_img {
+    width: 90%; }
+  body main #fullpage div div .risex {
+    height: 50px !important; }
+  body main #fullpage div div div .port_1_3 {
+    width: 60% !important; }
+  body main #fullpage div div div .port_2_3 {
+    width: 60% !important; }
+  body main #fullpage div div div .port_3_3 {
+    width: 60% !important; }
+  body main #fullpage div div div .go_to {
+    right: 10%; } }
+
+@media only screen and (max-width: 476px) {
+  body main #fullpage div div .joy {
+    height: 100px !important; } }
+
+@media only screen and (max-width: 433px) {
+  body main #menuToggle input {
+    width: 40px;
+    height: 40px; }
+  body main #menuToggle span {
+    width: 45px;
+    height: 5px; }
+  body main #fullpage div div .everitoken {
+    height: 90px !important; } }
+
+@media only screen and (max-width: 422px) {
+  body main #fullpage div div .risex {
+    height: 80px !important; }
+  body main #fullpage div div div .port_1_3 {
+    width: 55% !important; }
+  body main #fullpage div div div .port_2_3 {
+    width: 55% !important; }
+  body main #fullpage div div div .port_3_3 {
+    width: 55% !important; } }
+
+@media only screen and (max-width: 408px) {
+  body main #fullpage div div .joy {
+    height: 115px !important; }
+  body main #fullpage div div .risex {
+    height: 80px !important; } }

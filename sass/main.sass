@@ -1,0 +1,998 @@
+@import "media"
+@import "fonts"
+  
+//VARIABLES
+$gold: #DBC087
+$bg: #232227
+$white: #FFFFFF
+
+$regular: 'Montserrat Regular'
+$bold: 'Montserrat Bold'
+
+.flex
+	display: flex
+.grid
+	display: grid
+
+body
+	margin: 0
+	padding: 0
+	font-family: $regular
+	font-size: 10px
+	display: flex
+
+#cube-loader 
+  z-index: 3
+  align-items: center
+  display: flex
+  height: 100%
+  width: 100%
+  position: fixed
+  background: $bg
+  & .caption 
+    margin: 0 auto
+  .cube-loader 
+    width: 73px
+    height: 73px
+    margin: 0 auto
+    margin-top: 49px
+    position: relative
+    transform: rotateZ(45deg)
+    & .cube 
+      position: relative
+      transform: rotateZ(45deg)
+      width: 50%
+      height: 50%
+      float: left
+      transform: scale(1.1)
+    & .cube:before 
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: $gold
+      animation: cube-loader 2.76s infinite linear both
+      transform-origin: 100% 100%
+    & .loader-2 
+      transform: scale(1.1) rotateZ(90deg)
+    & .loader-3 
+      transform: scale(1.1) rotateZ(180deg)
+    & .loader-4 
+      transform: scale(1.1) rotateZ(270deg)
+    & .loader-2:before 
+      animation-delay: 0.35s
+    & .loader-3:before 
+      animation-delay: 0.69s
+    & .loader-4:before 
+      animation-delay: 1.04s
+    
+@keyframes cube-loader 
+  0%, 10% 
+    transform: perspective(136px) rotateX(-180deg)
+    opacity: 0
+  25%, 75% 
+    transform: perspective(136px) rotateX(0deg)
+    opacity: 1
+  90%, 100% 
+    transform: perspective(136px) rotateY(180deg)
+    opacity: 0
+  
+div h1 h2 h3 h4 h5 h6 p
+  padding: 0
+  margin: 0
+
+a
+	text-decoration: none
+
+// TODO: animate
+
+  
+
+// TODO: NAV MENU
+
+main
+  position: absolute
+  width: 100%
+  height: 100vh
+  background: radial-gradient(#302F35, #1B1A1E)
+  .bord_right
+    position: absolute
+    width: 2px
+    height: calc(100vh - 60px)
+    top: 30px
+    right: 30px
+    background-color: $gold
+  .bord_top_right
+    position: absolute
+    height: 2px
+    width: 100px
+    top: 30px
+    right: 30px
+    background-color: $gold
+  .bord_top_left
+    position: absolute
+    height: 2px
+    width: 100px
+    top: 30px
+    left: 30px
+    background-color: $gold
+  .bord_bottom_right
+    position: absolute
+    height: 2px
+    width: 25px
+    bottom: 30px
+    right: 30px
+    background-color: $gold
+  .bord_bottom_left
+    position: absolute
+    height: 2px
+    width: 25px
+    bottom: 30px
+    left: 30px
+    background-color: $gold
+  .bord_left_bottom
+    position: absolute
+    width: 2px
+    height: 25%
+    top: 30px
+    left: 30px
+    background-color: $gold
+  .bord_left_top
+    position: absolute
+    width: 2px
+    height: 25%
+    bottom: 30px
+    left: 30px
+    background-color: $gold
+
+  .agancy
+    position: absolute
+    font-family: 'Montserrat Bold'
+    padding: 0
+    margin: 0
+    top: 25px
+    left: 150px
+    color: $gold
+
+  .telegram
+    position: absolute
+    bottom: 20px
+    left: 70px
+    opacity: .30
+    transition: all .5s ease-in-out
+    &:hover
+      opacity: 1
+
+  .dot
+    position: absolute
+    height: 6px
+    width: 6px
+    border-radius: 50%
+    bottom: calc(30px - 3px)
+    left: 100px
+    background-color: $gold
+
+  .contact_us
+    position: absolute
+    font-family: 'Montserrat Bold'
+    bottom: 24px
+    left: 130px
+    color: $gold
+    opacity: .30
+    transition: all .5s ease-in-out
+    &:hover
+      opacity: 1
+
+  .menu
+    div
+      a
+        position: absolute
+        margin: 5px 0 5px 0
+        height: 8px
+        width: 8px
+        border-radius: 50%
+        left: 27px
+        background-color: $gold
+        opacity: .30
+        transition: all .5s ease-in-out
+        &:hover
+          opacity: 1
+      .home_dot
+        top: 36%
+      .concept_dot
+        top: 42%
+      .services_dot
+        top: 48%
+      .portfolio_dot
+        top: 54%
+      .contacts_dot
+        top: 60%
+
+    .menu__item.active
+      a
+        transition: all .3s ease-in-out
+        left: 22px
+        height: 15px
+        width: 15px
+        border-radius: 50%
+        background-color: transparent
+        border: 2px solid $gold
+        opacity: 1
+      .home_dot
+        top: 35%
+      .concept_dot
+        top: 41%
+      .services_dot
+        top: 47%
+      .portfolio_dot
+        top: 53%
+      .contacts_dot
+        top: 59%
+
+  .menu_services
+    visibility: hidden
+    opacity: 0
+    transition: all .3s ease-in-out
+    div
+      a 
+        color: $gold
+        font-family: $bold
+        font-size: 10px
+        position: absolute
+        bottom: 25px
+        right: 75px
+        margin: 0
+        padding: 0
+        opacity: .30
+        transition: all .3s ease-in-out
+        &:hover
+          opacity: 1
+      .service_telegram
+        right: 370px
+      .service_asia
+        right: 240px
+
+    .menu_services__item.active
+      a
+        opacity: 1
+
+
+  .menu_portfolio
+    visibility: hidden
+    opacity: 0
+    transition: all .3s ease-in-out
+    div
+      a 
+        color: $gold
+        font-family: $bold
+        font-size: 10px
+        position: absolute
+        bottom: 25px
+        right: 75px
+        margin: 0
+        padding: 0
+        opacity: .30
+        transition: all .3s ease-in-out
+        &:hover
+          opacity: 1
+      .portfolio_everitoken
+        right: 190px
+      .portfolio_thejoy
+        right: 130px
+
+    .menu_services__item.active
+      a
+        opacity: 1
+
+.menu_services_active, .menu_portfolio_active 
+  visibility: visible !important
+  opacity: 1 !important
+  transition: all .5s ease-in-out
+
+// TODO: HOME SECTION
+
+.home_section
+  // display: none
+  width: 100%
+  height: 100vh
+  .home_img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 66%
+    .home_img_mob
+      display: none
+
+
+// TODO: CONCEPT SECTION
+
+.concept_section
+  // display: none
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 100vh
+  .concept_caption
+    position: absolute
+    font-family: $bold
+    padding: 0
+    margin: 0
+    top: 25px
+    right: 150px
+    color: $gold
+  .about
+    width: 80%
+    background-color: $bg
+    border-left: 2px solid $gold
+    margin: 0.5% 0
+    padding: 2%
+    h2 
+      font-family: $bold
+      font-size: 18px
+      color: $gold
+      padding: 0 0 1% 0
+      margin: 0
+    p 
+      font-size: 12px
+      color: $white
+      padding: 0
+      margin: 0
+
+// TODO: SERVICES SECTION 1
+
+.services_1_section
+  // display: none
+  width: 100%
+  height: 100vh
+  justify-content: center
+  align-items: center
+  .services_caption
+    position: absolute
+    font-family: $bold
+    padding: 0
+    margin: 0
+    top: 25px
+    right: 150px
+    color: $gold
+  .services_1_caption_mob
+    display: none
+    font-family: $bold
+    font-size: 18px
+    color: $gold
+  .services_1_content
+    width: 40%
+    .services_1_caption
+      font-family: $bold
+      font-size: 24px
+      color: $gold
+    .service_basic, .service_company, .service_integration
+      position: relative
+      background-color: $bg
+      border-left: 2px solid $gold
+      margin: 2% 0
+      padding: 4% 5%
+      h2 
+        font-family: $bold
+        font-size: 18px
+        color: $gold
+        padding: 0 0 1% 0
+        margin: 0
+      p 
+        font-size: 12px
+        color: $white
+        padding: 0
+        margin: 0
+      .order
+        position: absolute
+        bottom: 0
+        right: 0
+        font-family: $bold
+        font-size: 10px
+        color: $white
+        padding: 1%
+        margin: 0
+        border: 2px solid $gold
+        transition: all .5s ease-in-out
+        &:hover
+          background-color: $gold
+  .services_1_img
+    width: 40%
+    justify-content: flex-end
+    svg
+      width: 80%
+      height: 100%
+
+// TODO: SERVICES SECTION 2
+
+.services_2_section
+  // display: none
+  width: 100%
+  height: 100vh
+  justify-content: center
+  align-items: center
+  .services_caption
+    position: absolute
+    font-family: $bold
+    padding: 0
+    margin: 0
+    top: 25px
+    right: 150px
+    color: $gold
+  .services_2_caption_mob
+    display: none
+    font-family: $bold
+    font-size: 18px
+    color: $gold
+  .services_2_content
+    width: 40%
+    .services_2_caption
+      font-family: $bold
+      font-size: 24px
+      color: $gold
+    .promotion_social, .promotion_smi
+      position: relative
+      background-color: $bg
+      border-left: 2px solid $gold
+      margin: 2% 0
+      padding: 4% 5%
+      h2 
+        font-family: $bold
+        font-size: 18px
+        color: $gold
+        padding: 0 0 1% 0
+        margin: 0
+      p 
+        font-size: 12px
+        color: $white
+        padding: 0
+        margin: 0
+      .order
+        position: absolute
+        bottom: 0
+        right: 0
+        font-family: $bold
+        font-size: 10px
+        color: $white
+        padding: 1%
+        margin: 0
+        border: 2px solid $gold
+        transition: all .5s ease-in-out
+        &:hover
+          background-color: $gold
+  .services_2_img
+    width: 40%
+    justify-content: flex-end
+    svg
+      width: 80%
+      height: 100%
+
+// TODO: SERVICES SECTION 3
+
+.services_3_section
+  // display: none
+  width: 100%
+  height: 100vh
+  justify-content: center
+  align-items: center
+  .services_caption
+    position: absolute
+    font-family: $bold
+    padding: 0
+    margin: 0
+    top: 25px
+    right: 150px
+    color: $gold
+  .services_3_caption_mob
+    display: none
+    font-family: $bold
+    font-size: 18px
+    color: $gold
+  .services_3_content
+    width: 40%
+    .services_3_caption
+      font-family: $bold
+      font-size: 24px
+      color: $gold
+    .develop_strategy
+      position: relative
+      background-color: $bg
+      border-left: 2px solid $gold
+      margin: 2% 0
+      padding: 4% 5%
+      h2 
+        font-family: $bold
+        font-size: 18px
+        color: $gold
+        padding: 0 0 1% 0
+        margin: 0
+      p 
+        font-size: 12px
+        color: $white
+        padding: 0
+        margin: 0
+      .order
+        position: absolute
+        bottom: 0
+        right: 0
+        font-family: $bold
+        font-size: 10px
+        color: $white
+        padding: 1%
+        margin: 0
+        border: 2px solid $gold
+        transition: all .5s ease-in-out
+        &:hover
+          background-color: $gold
+  .services_3_img
+    width: 40%
+    justify-content: flex-end
+    svg
+      width: 80%
+      height: 100%
+
+// TODO: PORTFOLIO SECTION 1
+
+.portfolio_1_section
+  // display: none
+  width: 100%
+  height: 100vh
+  justify-content: center
+  align-items: center
+  .portfolio_caption
+    position: absolute
+    font-family: $bold
+    padding: 0
+    margin: 0
+    top: 25px
+    right: 150px
+    color: $gold
+  .portfolio_1_caption
+    position: absolute
+    font-family: 'Montserrat Bold'
+    font-size: 24px
+    padding: 0
+    margin: 0
+    top: 10%
+    align-items: center
+    color: $gold
+  .portfolio_1_img
+    width: 40%
+    justify-content: flex-start
+    svg
+      width: 80%
+      height: 100%
+  .portfolio_1_content
+    width: 30%
+    .everitoken
+      height: 70px
+      position: relative
+      border: 2px solid $gold
+      border-left: none
+      border-bottom: none
+      margin: 2% 0
+      padding: 4% 5%
+      p 
+        position: absolute
+        left: -10%
+        top: 25%
+        font-size: 12px
+        color: $white
+        padding: 0
+        margin: 0
+        padding-right: 2%
+        span 
+          font-size: 14px
+          font-family: $bold
+          color: $gold
+          padding: 0
+          margin: 0
+      .port_1_1
+        position: absolute
+        height: 10px
+        width: 2px
+        top: 0
+        left: 0
+        background-color: $gold
+      .port_1_2
+        position: absolute
+        height: 10px
+        width: 2px
+        bottom: 0
+        left: 0
+        background-color: $gold
+      .port_1_3
+        position: absolute
+        height: 2px
+        width: 70%
+        bottom: 0
+        left: 0
+        background-color: $gold
+      .port_1_4
+        position: absolute
+        height: 2px
+        width: 5%
+        bottom: 0
+        right: 0
+        background-color: $gold
+      .go_to
+        position: absolute
+        bottom: -5px
+        right: 6%
+        font-family: $bold
+        font-size: 10px
+        color: $white
+        padding: 0
+        margin: 0
+        transition: all .5s ease-in-out
+        &:hover
+          color: $gold
+
+// TODO: PORTFOLIO SECTION 2
+
+.portfolio_2_section
+  // display: none
+  width: 100%
+  height: 100vh
+  justify-content: center
+  align-items: center
+  .portfolio_caption
+    position: absolute
+    font-family: 'Montserrat Bold'
+    padding: 0
+    margin: 0
+    top: 25px
+    right: 150px
+    color: $gold
+  .portfolio_2_caption
+    position: absolute
+    font-family: 'Montserrat Bold'
+    font-size: 24px
+    padding: 0
+    margin: 0
+    top: 10%
+    align-items: center
+    color: $gold
+  .portfolio_2_img
+    width: 40%
+    justify-content: flex-start
+    svg
+      width: 80%
+      height: 100%
+  .portfolio_2_content
+    width: 30%
+    .joy
+      height: 100px
+      position: relative
+      border: 2px solid $gold
+      border-left: none
+      border-bottom: none
+      margin: 2% 0
+      padding: 4% 5%
+      p 
+        position: absolute
+        left: -10%
+        top: 20%
+        font-size: 12px
+        color: $white
+        padding: 0
+        margin: 0
+        padding-right: 2%
+        span 
+          font-size: 14px
+          font-family: $bold
+          color: $gold
+          padding: 0
+          margin: 0
+      .port_2_1
+        position: absolute
+        height: 10px
+        width: 2px
+        top: 0
+        left: 0
+        background-color: $gold
+      .port_2_2
+        position: absolute
+        height: 10px
+        width: 2px
+        bottom: 0
+        left: 0
+        background-color: $gold
+      .port_2_3
+        position: absolute
+        height: 2px
+        width: 70%
+        bottom: 0
+        left: 0
+        background-color: $gold
+      .port_2_4
+        position: absolute
+        height: 2px
+        width: 5%
+        bottom: 0
+        right: 0
+        background-color: $gold
+      .go_to
+        position: absolute
+        bottom: -5px
+        right: 6%
+        font-family: $bold
+        font-size: 10px
+        color: $white
+        padding: 0
+        margin: 0
+        transition: all .5s ease-in-out
+        &:hover
+          color: $gold
+
+// TODO: PORTFOLIO SECTION 3
+
+.portfolio_3_section
+  // display: none
+  width: 100%
+  height: 100vh
+  justify-content: center
+  align-items: center
+  .portfolio_caption
+    position: absolute
+    font-family: 'Montserrat Bold'
+    padding: 0
+    margin: 0
+    top: 25px
+    right: 150px
+    color: $gold
+  .portfolio_3_caption
+    position: absolute
+    font-family: 'Montserrat Bold'
+    font-size: 24px
+    padding: 0
+    margin: 0
+    top: 10%
+    align-items: center
+    color: $gold
+  .portfolio_3_img
+    width: 40%
+    justify-content: flex-start
+    svg
+      width: 80%
+      height: 100%
+  .portfolio_3_content
+    width: 30%
+    .risex
+      height: 60px
+      position: relative
+      border: 2px solid $gold
+      border-left: none
+      border-bottom: none
+      margin: 2% 0
+      padding: 4% 5%
+      p 
+        position: absolute
+        left: -10%
+        top: 20%
+        font-size: 12px
+        color: $white
+        padding: 0
+        margin: 0
+        padding-right: 2%
+        span 
+          font-size: 14px
+          font-family: $bold
+          color: $gold
+          padding: 0
+          margin: 0
+      .port_3_1
+        position: absolute
+        height: 10px
+        width: 2px
+        top: 0
+        left: 0
+        background-color: $gold
+      .port_3_2
+        position: absolute
+        height: 10px
+        width: 2px
+        bottom: 0
+        left: 0
+        background-color: $gold
+      .port_3_3
+        position: absolute
+        height: 2px
+        width: 70%
+        bottom: 0
+        left: 0
+        background-color: $gold
+      .port_3_4
+        position: absolute
+        height: 2px
+        width: 5%
+        bottom: 0
+        right: 0
+        background-color: $gold
+      .go_to
+        position: absolute
+        bottom: -5px
+        right: 6%
+        font-family: $bold
+        font-size: 10px
+        color: $white
+        padding: 0
+        margin: 0
+        transition: all .5s ease-in-out
+        &:hover
+          color: $gold
+
+// TODO: CONTACTS SECTION
+
+.contacts_section
+  // display: none
+  width: 100%
+  height: 100vh
+  justify-content: center
+  align-items: center
+  .services_caption
+    position: absolute
+    font-family: 'Montserrat Bold'
+    padding: 0
+    margin: 0
+    top: 25px
+    right: 150px
+    color: $gold
+  .contacts_content
+    width: 40%
+    form 
+      width: 80%
+      flex-direction: column
+      align-items: flex-end
+      .form_where
+        transition: all .5s ease-in-out
+        font-family: $regular
+        color: $white
+        width: 90%
+        margin: 2% 0
+        padding: 3%
+        background-color: $bg
+        border: 2px solid rgba(219,192,135,0.0)
+        border-right: 2px solid $gold
+        &:hover
+          border: 2px solid $gold
+      .form_msg
+        transition: all .5s ease-in-out
+        font-family: $regular
+        color: $white
+        width: 90%
+        margin: 1% 0
+        padding: 3%
+        background-color: $bg
+        border: 2px solid rgba(219,192,135,0.0)
+        border-right: 2px solid $gold
+        &:hover
+          border: 2px solid $gold
+      .form_btn
+        transition: all .5s ease-in-out
+        font-family: $bold
+        margin: 1% 0
+        padding: 3% 7%
+        background-color: $bg
+        border: 2px solid rgba(219,192,135,0.0)
+        border-right: 2px solid $gold
+        color: rgba(255,255,255,0.5)
+        &:hover
+          border: 2px solid $gold
+          color: $gold
+
+
+    // FORM
+
+
+  .contacts_img
+    width: 40%
+    justify-content: center
+    svg
+      width: 80%
+      height: 100%
+
+  
+
+.mobile_menu
+  z-index: 1
+  display: none
+  visibility: hidden
+  opacity: 0
+  left: 0
+  top: 0  
+  position: fixed
+  width: 100%
+  height: 100vh
+  background-color: #1B1A1E
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  font-size: 36px
+  font-family: $bold
+  transition: all .5s ease-in-out
+  a
+    margin: 5% 0
+    color: $gold
+
+  .telegram_mobile
+    position: fixed
+    bottom: 0.5%
+    right: 4%
+    width: 60px
+    height: 60px       
+    svg
+      width: 100%
+
+
+.mobile_menu.active
+  transition: all .5s ease-in-out
+  visibility: visible !important
+  opacity: 1 !important
+
+
+#menuToggle 
+  z-index: 1
+  overflow: hidden
+  position: fixed
+  top: 3%
+  right: 3%
+  display: none
+  flex-direction: column
+
+#menuToggle input 
+  display: flex
+  width: 60px
+  height: 60px
+  position: absolute
+  cursor: pointer
+  opacity: 0 /* hide input */
+  z-index: 1 /* top of the menu */
+
+#menuToggle span
+  width: 55px
+  height: 8px
+  margin-bottom: 10px
+  background: $gold
+  border-radius: 4px
+  -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71)
+  -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71)
+  -ms-transition: all .5s cubic-bezier(.08,.81,.87,.71)
+  -o-transition: all .5s cubic-bezier(.08,.81,.87,.71)
+  transition: all .5s cubic-bezier(.08,.81,.87,.71)
+
+#span1 
+  transform-origin: 4px 0px
+
+#span3 
+  transform-origin: bottom right
+
+#menuToggle input:checked ~ #span1 
+  background-color: $gold
+  transform: rotate(45deg) translate(8px)
+
+#menuToggle input:checked ~ #span2 
+  background-color: $gold
+  transform: rotate(495deg) translate(4px)   
+
+#menuToggle input:checked ~ #span3 
+  background-color: $gold
+  transform: rotate(45deg)
+  opacity: 0
+
+
+// .mob_scrollup
+//   width: 60px
+//   height: 60px
+//   position: fixed
+//   bottom: 3%
+//   right: 3%
+//   display: none
+//   border-radius: 50%
+//   border: 4px solid $gold
+//   justify-content: center
+//   svg
+//     width: 50%
